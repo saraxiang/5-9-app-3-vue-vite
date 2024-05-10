@@ -7,8 +7,8 @@
     <!-- Navigation bar with Play Game and Leaderboard links -->
     <nav class="bg-blue-500 p-4 text-white">
       <ul class="flex justify-between">
-        <li><a href="#play" class="hover:text-blue-300">Play Game</a></li>
-        <li><a href="#leaderboard" class="hover:text-blue-300">Leaderboard</a></li>
+        <li><router-link to="/play" class="hover:text-blue-300">Play Game</router-link></li>
+        <li><router-link to="/leaderboard" class="hover:text-blue-300">Leaderboard</router-link></li>
       </ul>
     </nav>
     <!-- Main page content -->

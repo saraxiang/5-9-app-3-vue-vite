@@ -1,30 +1,33 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// Removed import of HelloWorld as it's not needed for the trivia game
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container mx-auto">
+    <!-- Navigation bar with Play Game and Leaderboard links -->
+    <nav class="bg-blue-500 p-4 text-white">
+      <ul class="flex justify-between">
+        <li><a href="#play" class="hover:text-blue-300">Play Game</a></li>
+        <li><a href="#leaderboard" class="hover:text-blue-300">Leaderboard</a></li>
+      </ul>
+    </nav>
+    <!-- Main page content -->
+    <main class="mt-8">
+      <section id="play" class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to the Trivia Game!</h1>
+        <p class="text-xl mb-4">Enter your name and start playing!</p>
+        <input type="text" placeholder="Your name" class="border-2 border-blue-500 p-2 mb-4" required>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Start Game
+        </button>
+      </section>
+    </main>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  max-width: 800px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+/* Tailwind utility classes are used for styling */
 </style>

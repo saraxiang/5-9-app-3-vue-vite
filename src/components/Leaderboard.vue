@@ -10,13 +10,11 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Dummy data for now -->
-        <tr>
-          <td class="border px-4 py-2">Alice</td>
-          <td class="border px-4 py-2">10</td>
-          <td class="border px-4 py-2">2024-05-10</td>
+        <tr v-for="(entry, index) in leaderboardData" :key="index">
+          <td class="border px-4 py-2">{{ entry.name }}</td>
+          <td class="border px-4 py-2">{{ entry.score }}</td>
+          <td class="border px-4 py-2">{{ entry.date }}</td>
         </tr>
-        <!-- More rows will be added here -->
       </tbody>
     </table>
   </div>
@@ -25,7 +23,18 @@
 <script>
 export default {
   name: 'Leaderboard',
-  // Data and methods for leaderboard will be added here
+  data() {
+    return {
+      // Dummy data for leaderboard
+      leaderboardData: [
+        { name: 'Alice', score: 10, date: '2024-05-10' },
+        { name: 'Bob', score: 8, date: '2024-05-09' },
+        { name: 'Charlie', score: 6, date: '2024-05-08' },
+        // More dummy entries can be added here
+      ],
+    };
+  },
+  // Methods for leaderboard functionality will be added here
 };
 </script>
 

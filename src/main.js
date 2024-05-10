@@ -2,16 +2,15 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import './style.css'
 import App from './App.vue'
-
-// Define route components
-// These can be imported from other files
-const PlayGame = { template: '<div>Play Game</div>' }
-const Leaderboard = { template: '<div>Leaderboard</div>' }
+import PlayGame from './components/PlayGame.vue'
+import TriviaQuestion from './components/TriviaQuestion.vue'
+import Leaderboard from './components/Leaderboard.vue'
 
 // Define routes
 const routes = [
   { path: '/', redirect: '/play' },
   { path: '/play', component: PlayGame },
+  { path: '/trivia', name: 'TriviaQuestion', component: TriviaQuestion, props: true },
   { path: '/leaderboard', component: Leaderboard }
 ]
 

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["Paris", "Berlin", "Madrid", "Rome"],
+    "answer": "Paris"
+  },
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["China", "Australia", "Japan", "India"],
+    "answer": "Japan"
+  },
+  {
+    "question": "What is the largest country in the world?",
+    "options": ["Russia", "Canada", "China", "United States"],
+    "answer": "Russia"
+  },
+  {
+    "question": "Where are the Pyramids of Giza?",
+    "options": ["India", "Egypt", "Mexico", "Peru"],
+    "answer": "Egypt"
+  },
+  {
+    "question": "Which river is the longest in the world?",
+    "options": ["Nile", "Amazon", "Yangtze", "Mississippi"],
+    "answer": "Nile"
+  }
+]

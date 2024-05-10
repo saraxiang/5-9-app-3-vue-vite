@@ -38,6 +38,28 @@ To run the application locally:
    ```
 3. Open the local server URL in a browser to view the application.
 
+## Building the Application
+
+To build the application for production:
+
+1. Run the build command:
+   ```
+   npm run build
+   ```
+2. The built assets will be output to the `dist` directory.
+
+## Application Components
+
+- `PlayGame.vue`: The component for the start page where users can enter their name and start the game.
+- `TriviaQuestion.vue`: The component that handles the display and interaction of trivia questions, including animations for correct answers using the `canvas-confetti` package.
+- `Leaderboard.vue`: The component that displays the leaderboard with dummy data.
+- `triviaQuestions.json`: Contains the trivia questions and answers data.
+
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+
+## Deployment
+
+- The deployment process is currently manual. After building the application, the `dist` directory needs to be deployed to the server's serving directory.
+- Further instructions will be provided once the deployment pipeline is established or the manual deployment process is clarified by the user.
